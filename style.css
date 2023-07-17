@@ -1,0 +1,121 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,400;1,700&display=swap'); */
+
+.search{
+    text-align: center;
+    background-color: rgb(11, 51, 38);
+    
+
+}
+h1{
+    color: rgb(249, 255, 253);
+}
+h2{
+    text-align: center;
+    font-style: italic;
+    font-size: 20px;
+    color: rgb(211, 135, 226);
+}
+body{
+    
+    line-height: 1.6;
+    background-color:rgb(198, 198, 240);
+    background-clip: content-box;
+
+}
+form{
+    display: flex;
+    justify-content: center;
+    align-items: centre;
+    margin-bottom: 60px;
+}
+
+#search-input{
+    width: 60%;
+    max-width: 400px;
+    padding:10px 20px;
+    border:none;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+#search-button{
+    margin-left: 10px;
+    border-radius: 10px;
+    background-color: orchid;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    margin-bottom: 10px;
+
+}
+
+.search-results{
+    display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.images{
+    margin-bottom: 60px;
+    float: left;
+    width: 33%;
+    height: 100%;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+
+.images img{
+    width:400px;
+    height:400px;
+    transition:opacity 0.2s ease-in-out;
+}
+
+.images:hover img{
+    opacity: 0.8;
+}
+
+.images a{
+    font-size: 20 px;
+    text-decoration: none;
+    color: #333;
+    display:block;
+    padding: 10px;
+    text-transform:capitalize;
+}
+
+#show-more-button{
+    background-color: #008cba;
+    font-size: 18px;
+    border:none;
+    color:#fff;
+    text-align: center;
+    padding: 10px 20px;
+    display:block;
+    cursor:pointer;
+    border-radius: 5px;
+    background-color:rgb(11, 51, 38);
+    
+    display: none;
+    
+}
+
+@media screen and (max-width: 768px){
+    .search-results{
+        padding: 20px;
+    }
+    .images{
+        width: 45%;
+    }
+}
+
+/* phone screen */
+@media screen and (max-width: 480px){
+    .images{
+        width: 100%;
+    }
+}
